@@ -1,0 +1,54 @@
+GET http://localhost:3000/api/products
+
+###
+GET http://localhost:3000/api/products/department/automotriz
+
+###
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+    "name": "Sartén",
+    "description": "Sartén redonda para freir",
+    "price": 25,
+    "stock": 300,
+    "department": "cocina",
+    "available": true
+}
+
+###
+PUT http://localhost:3000/api/products/64b7f3c4ed9d69be158ad4c3
+Content-Type: application/json
+
+{
+    "price": 56,
+    "stock": 200,
+    "available": false,
+    "name": "picadora"
+}
+
+###
+DELETE http://localhost:3000/api/products/64b7f3c4ed9d69be158ad4c3
+
+###
+POST http://localhost:3000/api/users
+Content-Type: application/json
+
+{
+    "username": "Mario",
+    "email": "mario@gmail.com",
+    "password": "12345"
+}
+
+# 64b8f2a0a8b76f66bbc09865
+# 64b8e2a03e3f20516f408e91
+###
+PUT http://localhost:3000/api/users/add_product/64b8f2a0a8b76f66bbc09865
+Content-Type: application/json
+
+{
+    "productId": "64b8e2a03e3f20516f408e91"
+}
+
+###
+GET http://localhost:3000/api/users/
