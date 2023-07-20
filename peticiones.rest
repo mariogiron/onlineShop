@@ -1,10 +1,10 @@
-GET http://localhost:3000/api/products
+GET https://shop-online-81lo.onrender.com/api/products
 
 ###
 GET http://localhost:3000/api/products/department/automotriz
 
 ###
-POST http://localhost:3000/api/products
+POST https://shop-online-81lo.onrender.com/api/products
 Content-Type: application/json
 
 {
@@ -31,7 +31,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/api/products/64b7f3c4ed9d69be158ad4c3
 
 ###
-POST http://localhost:3000/api/users
+POST https://shop-online-81lo.onrender.com/api/users
 Content-Type: application/json
 
 {

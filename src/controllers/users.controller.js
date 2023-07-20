@@ -1,6 +1,7 @@
 const User = require('../models/user.model');
 
 const getAllUsers = async (req, res) => {
+    console.log('Pasa por getAllUsers');
     const users = await User.find().populate('cart');
     res.json(users);
 }
